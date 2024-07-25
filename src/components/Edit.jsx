@@ -13,6 +13,7 @@ const Edit = ({ edittodo, task }) => {
         type="text"
         className="outline-none bg-transparent border border-gray-50 p-4 w-[300px]"
         placeholder="Update Task"
+        required
         onChange={(e) => setvalue(e.target.value)}
         value={value}
       />
