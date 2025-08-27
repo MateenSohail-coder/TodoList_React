@@ -1,0 +1,14 @@
+@import "tailwindcss";
+body{
+  min-height: 100vh;
+  background-color: #F8F5F1;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active {
+  box-shadow: none !important;
+  transform: none !important;
+}
