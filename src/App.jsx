@@ -58,7 +58,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="todoscontainer flex flex-col gap-3 mt-2.5 w-[50%] mx-auto ">
+      <div className="todoscontainer flex flex-col gap-3 mt-2.5 w-full px-2 md:w-[50%] mx-auto ">
         <div className="heading text-center text-2xl font-bold text-red-600 border-2 border-rose-600 bg-red-300 p-2 rounded-4xl">
           Todos
         </div>
@@ -74,11 +74,11 @@ function App() {
             }}
             value={todo}
             type="text"
-            className="focus:border-0 focus:outline-0 h-full w-[80%] text-xl pl-3.5 pr-2.5 text-rose-600"
+            className="focus:border-0 focus:outline-0 h-full w-[70%] md:w-[80%] text-xl pl-3.5 pr-2.5 text-rose-600"
           />{" "}
           <button
             onClick={handleAdd}
-            className="h-full hover:bg-rose-600 w-[20%] bg-rose-500 text-xl text-red-50 rounded-[22px] cursor-pointer"
+            className="h-full hover:bg-rose-600 w-[30%] md:w-[20%] bg-rose-500 text-xl text-red-50 rounded-[22px] cursor-pointer"
           >
             Save
           </button>
@@ -105,8 +105,8 @@ function App() {
                 <div
                   className={
                     items.isCompleted
-                      ? "content w-[85%] h-auto line-through text-xl text-rose-300 break-words whitespace-normal"
-                      : "content w-[85%] h-auto text-rose-600 text-xl break-words whitespace-normal"
+                      ? "content w-[70%] md:w-[85%] h-auto line-through text-xl text-rose-300 break-words whitespace-normal"
+                      : "content w-[70%] md:w-[85%] h-auto text-rose-600 text-xl break-words whitespace-normal"
                   }
                 >
                   {items.todo}
